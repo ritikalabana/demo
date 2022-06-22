@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>
+	bulb transition 
+</title>
+
+<link rel="style sheet"href="bulbtransition.css">
+
+<script language="javascript" type="text/javascript">
+function turnOff()
+{
+	var dh=document.getElementById("dh");
+		dh.src="bulb_off.jpg";
+}
+function turnOn()
+{
+	var dh=document.getElementById("dh");
+		dh.src="bulb_on.jpg";
+}
+</script>
+</head>
+<body>
+   <p align="center">
+    <img src="bulb_off.jpg" id="dh" width="200px" height="200px">
+	</p>
+	<table align="center">
+	<tr>
+	<td>
+	<button class="button" onclick="turnOff()">TURN OFF</button>
+	</td>
+	<td>
+	<button class="button" onclick="turnOn()">TURN ON</button>
+	</td>
+	</tr>
+	</table>
+	</body>
+	</html>
